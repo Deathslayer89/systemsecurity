@@ -1,0 +1,799 @@
+<!DOCTYPE html><html><head>
+      <title>combined_output</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\dines\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="task-1-process-management-simulator">Task 1: Process Management Simulator </h1>
+<h2 id="overview">Overview </h2>
+<p>In this task, I've implemented a process management simulator that mimics the behavior of operating system processes. The simulator supports key system calls such as <code>fork</code> and <code>exec</code>, allowing for the creation of child processes, duplication of the parent process's address space, and the ability for the child to replace its memory image with a new program using <code>exec</code>. The simulator also manages process states (ready, running, blocked), handles process termination, and maintains process hierarchies.</p>
+<h2 id="key-features">Key Features </h2>
+<ol>
+<li><strong>Process Creation and Forking</strong>: The simulator allows the creation of child processes using the <code>fork</code> system call. The child process inherits the address space of the parent process.</li>
+<li><strong>Exec System Call</strong>: The <code>exec</code> system call replaces the current process's memory image with a new program.</li>
+<li><strong>Process States</strong>: Processes can be in one of three states: <code>READY</code>, <code>RUNNING</code>, or <code>BLOCKED</code>.</li>
+<li><strong>Process Termination</strong>: The simulator supports terminating processes and cleaning up resources.</li>
+<li><strong>Process Hierarchies</strong>: The simulator maintains parent-child relationships between processes.</li>
+</ol>
+<h2 id="files-and-their-roles">Files and Their Roles </h2>
+<h3 id="1-process_simulatorcpp">1. <code>process_simulator.cpp</code> </h3>
+<p>This file contains the implementation of the process management simulator. It defines the <code>Process</code> and <code>ProcessManager</code> classes, which handle process creation, execution, and termination.</p>
+<h4 id="code-snippet">Code Snippet: </h4>
+<pre data-role="codeBlock" data-info="cpp" class="language-cpp cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unordered_map&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;memory&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+
+<span class="token keyword keyword-enum">enum</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">ProcessState</span> <span class="token punctuation">{</span> READY<span class="token punctuation">,</span> RUNNING<span class="token punctuation">,</span> BLOCKED <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-class">class</span> <span class="token class-name">Process</span> <span class="token punctuation">{</span>
+<span class="token keyword keyword-private">private</span><span class="token operator">:</span>
+    <span class="token keyword keyword-int">int</span> pid<span class="token punctuation">;</span>
+    <span class="token keyword keyword-int">int</span> ppid<span class="token punctuation">;</span>
+    ProcessState state<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword keyword-uint8_t">uint8_t</span><span class="token operator">&gt;</span> addressSpace<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span>std<span class="token double-colon punctuation">::</span>shared_ptr<span class="token operator">&lt;</span>Process<span class="token operator">&gt;&gt;</span> children<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-public">public</span><span class="token operator">:</span>
+    <span class="token function">Process</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> pid<span class="token punctuation">,</span> <span class="token keyword keyword-int">int</span> ppid <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">:</span> 
+        <span class="token function">pid</span><span class="token punctuation">(</span>pid<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">ppid</span><span class="token punctuation">(</span>ppid<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">state</span><span class="token punctuation">(</span>ProcessState<span class="token double-colon punctuation">::</span>READY<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        addressSpace<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Simple 1KB address space</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-int">int</span> <span class="token function">getPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword keyword-const">const</span> <span class="token punctuation">{</span> <span class="token keyword keyword-return">return</span> pid<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token keyword keyword-int">int</span> <span class="token function">getPPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword keyword-const">const</span> <span class="token punctuation">{</span> <span class="token keyword keyword-return">return</span> ppid<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    ProcessState <span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword keyword-const">const</span> <span class="token punctuation">{</span> <span class="token keyword keyword-return">return</span> state<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token keyword keyword-void">void</span> <span class="token function">setState</span><span class="token punctuation">(</span>ProcessState newState<span class="token punctuation">)</span> <span class="token punctuation">{</span> state <span class="token operator">=</span> newState<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    
+    std<span class="token double-colon punctuation">::</span>shared_ptr<span class="token operator">&lt;</span>Process<span class="token operator">&gt;</span> <span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-auto">auto</span> child <span class="token operator">=</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">make_shared</span><span class="token generic class-name"><span class="token operator">&lt;</span>Process<span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token function">getNextPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> pid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        child<span class="token operator">-&gt;</span>addressSpace <span class="token operator">=</span> addressSpace<span class="token punctuation">;</span> <span class="token comment">// Copy address space</span>
+        children<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>child<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> child<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-bool">bool</span> <span class="token function">exec</span><span class="token punctuation">(</span><span class="token keyword keyword-const">const</span> std<span class="token double-colon punctuation">::</span>string<span class="token operator">&amp;</span> program<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Simulate loading new program</span>
+        addressSpace<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        addressSpace<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// Simulate program loading</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Executing program: "</span> <span class="token operator">&lt;&lt;</span> program <span class="token operator">&lt;&lt;</span> <span class="token string">" in process "</span> <span class="token operator">&lt;&lt;</span> pid <span class="token operator">&lt;&lt;</span> std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token keyword keyword-private">private</span><span class="token operator">:</span>
+    <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-int">int</span> <span class="token function">getNextPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-int">int</span> nextPid <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> nextPid<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-class">class</span> <span class="token class-name">ProcessManager</span> <span class="token punctuation">{</span>
+<span class="token keyword keyword-private">private</span><span class="token operator">:</span>
+    std<span class="token double-colon punctuation">::</span>unordered_map<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">,</span> std<span class="token double-colon punctuation">::</span>shared_ptr<span class="token operator">&lt;</span>Process<span class="token operator">&gt;&gt;</span> processes<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>shared_ptr<span class="token operator">&lt;</span>Process<span class="token operator">&gt;</span> currentProcess<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-public">public</span><span class="token operator">:</span>
+    <span class="token function">ProcessManager</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Create init process</span>
+        <span class="token keyword keyword-auto">auto</span> init <span class="token operator">=</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">make_shared</span><span class="token generic class-name"><span class="token operator">&lt;</span>Process<span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        processes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> init<span class="token punctuation">;</span>
+        currentProcess <span class="token operator">=</span> init<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    std<span class="token double-colon punctuation">::</span>shared_ptr<span class="token operator">&lt;</span>Process<span class="token operator">&gt;</span> <span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>currentProcess<span class="token punctuation">)</span> <span class="token keyword keyword-return">return</span> <span class="token keyword keyword-nullptr">nullptr</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-auto">auto</span> child <span class="token operator">=</span> currentProcess<span class="token operator">-&gt;</span><span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        processes<span class="token punctuation">[</span>child<span class="token operator">-&gt;</span><span class="token function">getPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> child<span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> child<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-bool">bool</span> <span class="token function">exec</span><span class="token punctuation">(</span><span class="token keyword keyword-const">const</span> std<span class="token double-colon punctuation">::</span>string<span class="token operator">&amp;</span> program<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>currentProcess<span class="token punctuation">)</span> <span class="token keyword keyword-return">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> currentProcess<span class="token operator">-&gt;</span><span class="token function">exec</span><span class="token punctuation">(</span>program<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-bool">bool</span> <span class="token function">terminateProcess</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> pid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>processes<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>pid<span class="token punctuation">)</span> <span class="token operator">==</span> processes<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword keyword-return">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        processes<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span>pid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-void">void</span> <span class="token function">switchProcess</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> pid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>processes<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>pid<span class="token punctuation">)</span> <span class="token operator">!=</span> processes<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>currentProcess<span class="token punctuation">)</span> 
+                currentProcess<span class="token operator">-&gt;</span><span class="token function">setState</span><span class="token punctuation">(</span>ProcessState<span class="token double-colon punctuation">::</span>READY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            currentProcess <span class="token operator">=</span> processes<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            currentProcess<span class="token operator">-&gt;</span><span class="token function">setState</span><span class="token punctuation">(</span>ProcessState<span class="token double-colon punctuation">::</span>RUNNING<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Example usage</span>
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ProcessManager pm<span class="token punctuation">;</span>
+    
+    <span class="token comment">// Create child process</span>
+    <span class="token keyword keyword-auto">auto</span> child <span class="token operator">=</span> pm<span class="token punctuation">.</span><span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Created child process: "</span> <span class="token operator">&lt;&lt;</span> child<span class="token operator">-&gt;</span><span class="token function">getPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+    
+    <span class="token comment">// Execute new program in child</span>
+    pm<span class="token punctuation">.</span><span class="token function">switchProcess</span><span class="token punctuation">(</span>child<span class="token operator">-&gt;</span><span class="token function">getPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pm<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"new_program.exe"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// Terminate child</span>
+    pm<span class="token punctuation">.</span><span class="token function">terminateProcess</span><span class="token punctuation">(</span>child<span class="token operator">-&gt;</span><span class="token function">getPid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="how-to-run">How to Run: </h4>
+<ol>
+<li>Compile the file using a C++ compiler (e.g., <code>g++</code>):<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>g++ process_simulator.cpp <span class="token parameter variable">-o</span> process_simulator
+</code></pre></li>
+<li>Run the compiled program:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./process_simulator
+</code></pre></li>
+<li>The program will simulate the creation of a child process, execution of a new program, and termination of the child process.</li>
+</ol>
+<hr>
+<h3 id="2-virtual_memorycpp">2. <code>virtual_memory.cpp</code> </h3>
+<p>This file implements a simple virtual memory system with paging. It simulates a process with virtual memory addresses that are mapped to physical memory using a page table. The system handles page faults and implements the LRU (Least Recently Used) page replacement algorithm.</p>
+<h4 id="code-snippet-1">Code Snippet: </h4>
+<pre data-role="codeBlock" data-info="cpp" class="language-cpp cpp"><code><span class="token comment">// Virtual Memory System with Paging</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unordered_map&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;list&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdint&gt;</span></span>
+
+<span class="token keyword keyword-const">const</span> size_t PAGE_SIZE <span class="token operator">=</span> <span class="token number">4096</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> size_t NUM_PAGES <span class="token operator">=</span> <span class="token number">256</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> size_t NUM_FRAMES <span class="token operator">=</span> <span class="token number">128</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-struct">struct</span> <span class="token class-name">Page</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-uint8_t">uint8_t</span> data<span class="token punctuation">[</span>PAGE_SIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-bool">bool</span> dirty <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-bool">bool</span> present <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-struct">struct</span> <span class="token class-name">PageTableEntry</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-uint32_t">uint32_t</span> frame_number<span class="token punctuation">;</span>
+    <span class="token keyword keyword-bool">bool</span> present<span class="token punctuation">;</span>
+    <span class="token keyword keyword-bool">bool</span> dirty<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-class">class</span> <span class="token class-name">VirtualMemory</span> <span class="token punctuation">{</span>
+<span class="token keyword keyword-private">private</span><span class="token operator">:</span>
+    std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span>Page<span class="token operator">&gt;</span> physical_memory<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span>PageTableEntry<span class="token operator">&gt;</span> page_table<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>list<span class="token operator">&lt;</span><span class="token keyword keyword-uint32_t">uint32_t</span><span class="token operator">&gt;</span> lru_list<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>unordered_map<span class="token operator">&lt;</span><span class="token keyword keyword-uint32_t">uint32_t</span><span class="token punctuation">,</span> std<span class="token double-colon punctuation">::</span>list<span class="token operator">&lt;</span><span class="token keyword keyword-uint32_t">uint32_t</span><span class="token operator">&gt;</span><span class="token double-colon punctuation">::</span>iterator<span class="token operator">&gt;</span> page_to_lru<span class="token punctuation">;</span>
+    size_t free_frames<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-public">public</span><span class="token operator">:</span>
+    <span class="token function">VirtualMemory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> 
+        <span class="token function">physical_memory</span><span class="token punctuation">(</span>NUM_FRAMES<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">page_table</span><span class="token punctuation">(</span>NUM_PAGES<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">free_frames</span><span class="token punctuation">(</span>NUM_FRAMES<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-auto">auto</span><span class="token operator">&amp;</span> pte <span class="token operator">:</span> page_table<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            pte<span class="token punctuation">.</span>present <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            pte<span class="token punctuation">.</span>dirty <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-uint8_t">uint8_t</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token keyword keyword-uint32_t">uint32_t</span> virtual_address<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-uint32_t">uint32_t</span> page_number <span class="token operator">=</span> virtual_address <span class="token operator">/</span> PAGE_SIZE<span class="token punctuation">;</span>
+        <span class="token keyword keyword-uint32_t">uint32_t</span> offset <span class="token operator">=</span> virtual_address <span class="token operator">%</span> PAGE_SIZE<span class="token punctuation">;</span>
+        
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>present<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">handlePageFault</span><span class="token punctuation">(</span>page_number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment">// Update LRU</span>
+        <span class="token function">updateLRU</span><span class="token punctuation">(</span>page_number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword keyword-uint32_t">uint32_t</span> frame_number <span class="token operator">=</span> page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>frame_number<span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> physical_memory<span class="token punctuation">[</span>frame_number<span class="token punctuation">]</span><span class="token punctuation">.</span>data<span class="token punctuation">[</span>offset<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-void">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword keyword-uint32_t">uint32_t</span> virtual_address<span class="token punctuation">,</span> <span class="token keyword keyword-uint8_t">uint8_t</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-uint32_t">uint32_t</span> page_number <span class="token operator">=</span> virtual_address <span class="token operator">/</span> PAGE_SIZE<span class="token punctuation">;</span>
+        <span class="token keyword keyword-uint32_t">uint32_t</span> offset <span class="token operator">=</span> virtual_address <span class="token operator">%</span> PAGE_SIZE<span class="token punctuation">;</span>
+        
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>present<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">handlePageFault</span><span class="token punctuation">(</span>page_number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment">// Update LRU and mark page as dirty</span>
+        <span class="token function">updateLRU</span><span class="token punctuation">(</span>page_number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>dirty <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword keyword-uint32_t">uint32_t</span> frame_number <span class="token operator">=</span> page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>frame_number<span class="token punctuation">;</span>
+        physical_memory<span class="token punctuation">[</span>frame_number<span class="token punctuation">]</span><span class="token punctuation">.</span>data<span class="token punctuation">[</span>offset<span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+        physical_memory<span class="token punctuation">[</span>frame_number<span class="token punctuation">]</span><span class="token punctuation">.</span>dirty <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token keyword keyword-private">private</span><span class="token operator">:</span>
+    <span class="token keyword keyword-void">void</span> <span class="token function">handlePageFault</span><span class="token punctuation">(</span><span class="token keyword keyword-uint32_t">uint32_t</span> page_number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-uint32_t">uint32_t</span> frame_number<span class="token punctuation">;</span>
+        
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>free_frames <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            frame_number <span class="token operator">=</span> NUM_FRAMES <span class="token operator">-</span> free_frames<span class="token punctuation">;</span>
+            free_frames<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Use LRU to select page to evict</span>
+            <span class="token keyword keyword-uint32_t">uint32_t</span> victim_page <span class="token operator">=</span> lru_list<span class="token punctuation">.</span><span class="token function">back</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            frame_number <span class="token operator">=</span> page_table<span class="token punctuation">[</span>victim_page<span class="token punctuation">]</span><span class="token punctuation">.</span>frame_number<span class="token punctuation">;</span>
+            
+            <span class="token comment">// Write back if dirty</span>
+            <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>page_table<span class="token punctuation">[</span>victim_page<span class="token punctuation">]</span><span class="token punctuation">.</span>dirty<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">writePageToDisk</span><span class="token punctuation">(</span>victim_page<span class="token punctuation">,</span> frame_number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            
+            page_table<span class="token punctuation">[</span>victim_page<span class="token punctuation">]</span><span class="token punctuation">.</span>present <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            lru_list<span class="token punctuation">.</span><span class="token function">pop_back</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            page_to_lru<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span>victim_page<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token comment">// Load page from disk</span>
+        <span class="token function">loadPageFromDisk</span><span class="token punctuation">(</span>page_number<span class="token punctuation">,</span> frame_number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>frame_number <span class="token operator">=</span> frame_number<span class="token punctuation">;</span>
+        page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>present <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        page_table<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">.</span>dirty <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-void">void</span> <span class="token function">updateLRU</span><span class="token punctuation">(</span><span class="token keyword keyword-uint32_t">uint32_t</span> page_number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>page_to_lru<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>page_number<span class="token punctuation">)</span> <span class="token operator">!=</span> page_to_lru<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            lru_list<span class="token punctuation">.</span><span class="token function">erase</span><span class="token punctuation">(</span>page_to_lru<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        lru_list<span class="token punctuation">.</span><span class="token function">push_front</span><span class="token punctuation">(</span>page_number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        page_to_lru<span class="token punctuation">[</span>page_number<span class="token punctuation">]</span> <span class="token operator">=</span> lru_list<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-void">void</span> <span class="token function">writePageToDisk</span><span class="token punctuation">(</span><span class="token keyword keyword-uint32_t">uint32_t</span> page_number<span class="token punctuation">,</span> <span class="token keyword keyword-uint32_t">uint32_t</span> frame_number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Simulate writing to disk</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Writing page "</span> <span class="token operator">&lt;&lt;</span> page_number <span class="token operator">&lt;&lt;</span> <span class="token string">" to disk"</span> <span class="token operator">&lt;&lt;</span> std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-void">void</span> <span class="token function">loadPageFromDisk</span><span class="token punctuation">(</span><span class="token keyword keyword-uint32_t">uint32_t</span> page_number<span class="token punctuation">,</span> <span class="token keyword keyword-uint32_t">uint32_t</span> frame_number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Simulate loading from disk</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Loading page "</span> <span class="token operator">&lt;&lt;</span> page_number <span class="token operator">&lt;&lt;</span> <span class="token string">" from disk to frame "</span> 
+                  <span class="token operator">&lt;&lt;</span> frame_number <span class="token operator">&lt;&lt;</span> std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    VirtualMemory vm<span class="token punctuation">;</span>
+    
+    <span class="token comment">// Example usage</span>
+    vm<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">42</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    vm<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>PAGE_SIZE<span class="token punctuation">,</span> <span class="token number">84</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Value at address 0: "</span> <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span><span class="token punctuation">)</span>vm<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Value at address "</span> <span class="token operator">&lt;&lt;</span> PAGE_SIZE <span class="token operator">&lt;&lt;</span> <span class="token string">": "</span> 
+              <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span><span class="token punctuation">)</span>vm<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>PAGE_SIZE<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+    
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="how-to-run-1">How to Run: </h4>
+<ol>
+<li>Compile the file using a C++ compiler (e.g., <code>g++</code>):<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>g++ virtual_memory.cpp <span class="token parameter variable">-o</span> virtual_memory
+</code></pre></li>
+<li>Run the compiled program:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./virtual_memory
+</code></pre></li>
+<li>The program will simulate virtual memory operations, including reading and writing to memory, handling page faults, and swapping pages using the LRU algorithm.</li>
+</ol>
+<hr>
+<h3 id="3-web_servercpp">3. <code>web_server.cpp</code> </h3>
+<p>This file implements a multithreaded web server using POSIX threads (Pthreads). The server can handle multiple client requests concurrently, with each request being handled by a different thread. The implementation ensures proper thread synchronization, avoids race conditions, and supports graceful thread shutdown when the server exits.</p>
+<h4 id="code-snippet-2">Code Snippet: </h4>
+<pre data-role="codeBlock" data-info="cpp" class="language-cpp cpp"><code><span class="token comment">// Multithreaded Web Server</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;pthread.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;sys/socket.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;netinet/in.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;atomic&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;signal.h&gt;</span></span>
+
+<span class="token keyword keyword-const">const</span> <span class="token keyword keyword-int">int</span> MAX_THREADS <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> <span class="token keyword keyword-int">int</span> PORT <span class="token operator">=</span> <span class="token number">8080</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-struct">struct</span> <span class="token class-name">ThreadPool</span> <span class="token punctuation">{</span>
+    std<span class="token double-colon punctuation">::</span>queue<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token operator">&gt;</span> clientQueue<span class="token punctuation">;</span>
+    pthread_t threads<span class="token punctuation">[</span>MAX_THREADS<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    pthread_mutex_t queueMutex<span class="token punctuation">;</span>
+    pthread_cond_t queueCond<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>atomic<span class="token operator">&lt;</span><span class="token keyword keyword-bool">bool</span><span class="token operator">&gt;</span> shutdownFlag<span class="token punctuation">{</span><span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    
+    <span class="token function">ThreadPool</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pthread_mutex_init</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>queueMutex<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_init</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>queueCond<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token operator">~</span><span class="token function">ThreadPool</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pthread_mutex_destroy</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>queueMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_destroy</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>queueCond<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+ThreadPool<span class="token operator">*</span> pool<span class="token punctuation">;</span>
+
+<span class="token keyword keyword-void">void</span><span class="token operator">*</span> <span class="token function">handleClient</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span><span class="token operator">*</span> arg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-char">char</span> buffer<span class="token punctuation">[</span><span class="token number">1024</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>pool<span class="token operator">-&gt;</span>shutdownFlag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-int">int</span> clientSocket<span class="token punctuation">;</span>
+        
+        <span class="token function">pthread_mutex_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span>pool<span class="token operator">-&gt;</span>clientQueue<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>pool<span class="token operator">-&gt;</span>shutdownFlag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">pthread_cond_wait</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueCond<span class="token punctuation">,</span> <span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>pool<span class="token operator">-&gt;</span>shutdownFlag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">pthread_mutex_unlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        clientSocket <span class="token operator">=</span> pool<span class="token operator">-&gt;</span>clientQueue<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pool<span class="token operator">-&gt;</span>clientQueue<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_mutex_unlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// Handle client request</span>
+        <span class="token function">read</span><span class="token punctuation">(</span>clientSocket<span class="token punctuation">,</span> buffer<span class="token punctuation">,</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// Simple HTTP response</span>
+        std<span class="token double-colon punctuation">::</span>string response <span class="token operator">=</span> <span class="token string">"HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, World!"</span><span class="token punctuation">;</span>
+        <span class="token function">write</span><span class="token punctuation">(</span>clientSocket<span class="token punctuation">,</span> response<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> response<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token function">close</span><span class="token punctuation">(</span>clientSocket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword keyword-return">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">signalHandler</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> sig<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>pool<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        pool<span class="token operator">-&gt;</span>shutdownFlag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_broadcast</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueCond<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-int">int</span> serverSocket <span class="token operator">=</span> <span class="token function">socket</span><span class="token punctuation">(</span>AF_INET<span class="token punctuation">,</span> SOCK_STREAM<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-struct">struct</span> <span class="token class-name">sockaddr_in</span> address<span class="token punctuation">;</span>
+    address<span class="token punctuation">.</span>sin_family <span class="token operator">=</span> AF_INET<span class="token punctuation">;</span>
+    address<span class="token punctuation">.</span>sin_addr<span class="token punctuation">.</span>s_addr <span class="token operator">=</span> INADDR_ANY<span class="token punctuation">;</span>
+    address<span class="token punctuation">.</span>sin_port <span class="token operator">=</span> <span class="token function">htons</span><span class="token punctuation">(</span>PORT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token function">bind</span><span class="token punctuation">(</span>serverSocket<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword keyword-struct">struct</span> <span class="token class-name">sockaddr</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>address<span class="token punctuation">,</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>address<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">listen</span><span class="token punctuation">(</span>serverSocket<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    pool <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token function">ThreadPool</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">signal</span><span class="token punctuation">(</span>SIGINT<span class="token punctuation">,</span> signalHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// Create thread pool</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> MAX_THREADS<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pthread_create</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>threads<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> handleClient<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>pool<span class="token operator">-&gt;</span>shutdownFlag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-int">int</span> clientSocket <span class="token operator">=</span> <span class="token function">accept</span><span class="token punctuation">(</span>serverSocket<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>clientSocket <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword keyword-continue">continue</span><span class="token punctuation">;</span>
+        
+        <span class="token function">pthread_mutex_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pool<span class="token operator">-&gt;</span>clientQueue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>clientSocket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_signal</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueCond<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_mutex_unlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>queueMutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// Cleanup</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> MAX_THREADS<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pthread_join</span><span class="token punctuation">(</span>pool<span class="token operator">-&gt;</span>threads<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token function">close</span><span class="token punctuation">(</span>serverSocket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-delete">delete</span> pool<span class="token punctuation">;</span>
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="how-to-run-2">How to Run: </h4>
+<ol>
+<li>Compile the file using a C++ compiler (e.g., <code>g++</code>):<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>g++ web_server.cpp <span class="token parameter variable">-o</span> web_server <span class="token parameter variable">-lpthread</span>
+</code></pre>(Note: The <code>-lpthread</code> flag is required to link the pthread library.)</li>
+<li>Run the compiled program:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./web_server
+</code></pre></li>
+<li>The server will start listening on port 8080. You can send HTTP requests to <code>http://localhost:8080</code> using a browser or a tool like <code>curl</code>.</li>
+<li>To shut down the server gracefully, press <code>Ctrl+C</code>. The server will handle the shutdown signal and terminate all threads properly.</li>
+</ol>
+<h4 id="output">Output: </h4>
+<p><img src="Task1//output1.png" alt=""><br>
+<img src="Task1//output2.png" alt=""></p>
+<hr>
+<h2 id="conclusion">Conclusion </h2>
+<p>Task 1 consists of three main components:</p>
+<ol>
+<li><strong>Process Management Simulator</strong>: Simulates process creation, execution, and termination.</li>
+<li><strong>Virtual Memory System</strong>: Simulates virtual memory management with paging and page fault handling.</li>
+<li><strong>Multithreaded Web Server</strong>: Implements a concurrent web server using POSIX threads.</li>
+</ol>
+<p>Each component is implemented in a separate file, and the instructions for compiling and running each program are provided above. These programs demonstrate key concepts in operating systems, including process management, memory management, and concurrent server design.</p>
+<h1 id="task-2-multithreaded-web-server">Task 2: Multithreaded Web Server </h1>
+<h2 id="overview-1">Overview </h2>
+<p>In Task 2, I've implemented a multithreaded web server using POSIX threads (Pthreads). The server is designed to handle multiple client requests concurrently, with each request being processed by a separate thread. The implementation ensures proper thread synchronization, avoids race conditions, and supports graceful thread shutdown when the server exits. Additionally, the server uses a thread pool for efficient resource management.</p>
+<h2 id="key-features-1">Key Features </h2>
+<ol>
+<li><strong>Multithreading</strong>: Each client request is handled by a separate thread, allowing the server to process multiple requests simultaneously.</li>
+<li><strong>Thread Pooling</strong>: A pool of threads is created to handle incoming requests efficiently, reducing the overhead of creating and destroying threads for each request.</li>
+<li><strong>Graceful Shutdown</strong>: The server can shut down gracefully, ensuring all threads complete their tasks before exiting.</li>
+<li><strong>Thread Synchronization</strong>: Proper synchronization mechanisms (e.g., mutexes and condition variables) are used to avoid race conditions and ensure thread safety.</li>
+</ol>
+<h2 id="files-and-their-roles-1">Files and Their Roles </h2>
+<h3 id="1-webservercpp">1. <code>webserver.cpp</code> </h3>
+<p>This file contains the implementation of the multithreaded web server. It defines a <code>ThreadPool</code> class to manage the thread pool and handle client requests concurrently.</p>
+<h4 id="code-snippet-3">Code Snippet: </h4>
+<pre data-role="codeBlock" data-info="cpp" class="language-cpp cpp"><code><span class="token comment">// webserver.cpp</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;pthread.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;sys/socket.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;netinet/in.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;signal.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">PORT</span> <span class="token expression"><span class="token number">8080</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">THREAD_POOL_SIZE</span> <span class="token expression"><span class="token number">10</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">MAX_CONNECTIONS</span> <span class="token expression"><span class="token number">100</span></span></span>
+
+<span class="token keyword keyword-struct">struct</span> <span class="token class-name">ThreadPool</span> <span class="token punctuation">{</span>
+    std<span class="token double-colon punctuation">::</span>queue<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token operator">&gt;</span> tasks<span class="token punctuation">;</span>
+    pthread_t<span class="token operator">*</span> threads<span class="token punctuation">;</span>
+    pthread_mutex_t mutex<span class="token punctuation">;</span>
+    pthread_cond_t condition<span class="token punctuation">;</span>
+    <span class="token keyword keyword-bool">bool</span> shutdown<span class="token punctuation">;</span>
+
+    <span class="token function">ThreadPool</span><span class="token punctuation">(</span>size_t num_threads<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">shutdown</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pthread_mutex_init</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>mutex<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_init</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>condition<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        threads <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> pthread_t<span class="token punctuation">[</span>num_threads<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token operator">~</span><span class="token function">ThreadPool</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-delete">delete</span><span class="token punctuation">[</span><span class="token punctuation">]</span> threads<span class="token punctuation">;</span>
+        <span class="token function">pthread_mutex_destroy</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_destroy</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+ThreadPool<span class="token operator">*</span> pool <span class="token operator">=</span> <span class="token keyword keyword-nullptr">nullptr</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">send_http_response</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> client_socket<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-const">const</span> <span class="token keyword keyword-char">char</span><span class="token operator">*</span> response <span class="token operator">=</span> 
+        <span class="token string">"HTTP/1.1 200 OK\r\n"</span>
+        <span class="token string">"Content-Type: text/html\r\n"</span>
+        <span class="token string">"Connection: close\r\n"</span>
+        <span class="token string">"\r\n"</span>
+        <span class="token string">"&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello from Multithreaded Server!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;"</span><span class="token punctuation">;</span>
+    
+    <span class="token function">write</span><span class="token punctuation">(</span>client_socket<span class="token punctuation">,</span> response<span class="token punctuation">,</span> <span class="token function">strlen</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span><span class="token operator">*</span> <span class="token function">handle_connection</span><span class="token punctuation">(</span><span class="token keyword keyword-void">void</span><span class="token operator">*</span> arg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-char">char</span> buffer<span class="token punctuation">[</span><span class="token number">1024</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-int">int</span> client_socket<span class="token punctuation">;</span>
+        
+        <span class="token function">pthread_mutex_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span>pool<span class="token operator">-&gt;</span>tasks<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>pool<span class="token operator">-&gt;</span>shutdown<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">pthread_cond_wait</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>condition<span class="token punctuation">,</span> <span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>pool<span class="token operator">-&gt;</span>shutdown <span class="token operator">&amp;&amp;</span> pool<span class="token operator">-&gt;</span>tasks<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">pthread_mutex_unlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        client_socket <span class="token operator">=</span> pool<span class="token operator">-&gt;</span>tasks<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pool<span class="token operator">-&gt;</span>tasks<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_mutex_unlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Handle client request</span>
+        ssize_t bytes_read <span class="token operator">=</span> <span class="token function">read</span><span class="token punctuation">(</span>client_socket<span class="token punctuation">,</span> buffer<span class="token punctuation">,</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>bytes_read <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            buffer<span class="token punctuation">[</span>bytes_read<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">'\0'</span><span class="token punctuation">;</span>
+            std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Received request from client\n"</span><span class="token punctuation">;</span>
+            <span class="token function">send_http_response</span><span class="token punctuation">(</span>client_socket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token function">close</span><span class="token punctuation">(</span>client_socket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword keyword-return">return</span> <span class="token keyword keyword-nullptr">nullptr</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">signal_handler</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> sig<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>pool<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pthread_mutex_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pool<span class="token operator">-&gt;</span>shutdown <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_broadcast</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_mutex_unlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-int">int</span> server_socket <span class="token operator">=</span> <span class="token function">socket</span><span class="token punctuation">(</span>AF_INET<span class="token punctuation">,</span> SOCK_STREAM<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>server_socket <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        std<span class="token double-colon punctuation">::</span>cerr <span class="token operator">&lt;&lt;</span> <span class="token string">"Failed to create socket\n"</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Set socket options</span>
+    <span class="token keyword keyword-int">int</span> opt <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">setsockopt</span><span class="token punctuation">(</span>server_socket<span class="token punctuation">,</span> SOL_SOCKET<span class="token punctuation">,</span> SO_REUSEADDR<span class="token punctuation">,</span> <span class="token operator">&amp;</span>opt<span class="token punctuation">,</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>opt<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        std<span class="token double-colon punctuation">::</span>cerr <span class="token operator">&lt;&lt;</span> <span class="token string">"setsockopt failed\n"</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Configure server address</span>
+    <span class="token keyword keyword-struct">struct</span> <span class="token class-name">sockaddr_in</span> address<span class="token punctuation">;</span>
+    address<span class="token punctuation">.</span>sin_family <span class="token operator">=</span> AF_INET<span class="token punctuation">;</span>
+    address<span class="token punctuation">.</span>sin_addr<span class="token punctuation">.</span>s_addr <span class="token operator">=</span> INADDR_ANY<span class="token punctuation">;</span>
+    address<span class="token punctuation">.</span>sin_port <span class="token operator">=</span> <span class="token function">htons</span><span class="token punctuation">(</span>PORT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment">// Bind socket</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">bind</span><span class="token punctuation">(</span>server_socket<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword keyword-struct">struct</span> <span class="token class-name">sockaddr</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>address<span class="token punctuation">,</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>address<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        std<span class="token double-colon punctuation">::</span>cerr <span class="token operator">&lt;&lt;</span> <span class="token string">"Bind failed\n"</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Listen for connections</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">listen</span><span class="token punctuation">(</span>server_socket<span class="token punctuation">,</span> MAX_CONNECTIONS<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        std<span class="token double-colon punctuation">::</span>cerr <span class="token operator">&lt;&lt;</span> <span class="token string">"Listen failed\n"</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Initialize thread pool</span>
+    pool <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token function">ThreadPool</span><span class="token punctuation">(</span>THREAD_POOL_SIZE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// Set up signal handler</span>
+    <span class="token function">signal</span><span class="token punctuation">(</span>SIGINT<span class="token punctuation">,</span> signal_handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// Create worker threads</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> THREAD_POOL_SIZE<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">pthread_create</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>threads<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> handle_connection<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            std<span class="token double-colon punctuation">::</span>cerr <span class="token operator">&lt;&lt;</span> <span class="token string">"Failed to create thread\n"</span><span class="token punctuation">;</span>
+            <span class="token keyword keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Server started on port "</span> <span class="token operator">&lt;&lt;</span> PORT <span class="token operator">&lt;&lt;</span> std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+
+    <span class="token comment">// Accept connections</span>
+    <span class="token keyword keyword-while">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>pool<span class="token operator">-&gt;</span>shutdown<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-int">int</span> client_socket <span class="token operator">=</span> <span class="token function">accept</span><span class="token punctuation">(</span>server_socket<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>client_socket <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword keyword-continue">continue</span><span class="token punctuation">;</span>
+
+        <span class="token function">pthread_mutex_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pool<span class="token operator">-&gt;</span>tasks<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>client_socket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_cond_signal</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">pthread_mutex_unlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pool<span class="token operator">-&gt;</span>mutex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Wait for threads to finish</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> THREAD_POOL_SIZE<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pthread_join</span><span class="token punctuation">(</span>pool<span class="token operator">-&gt;</span>threads<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">close</span><span class="token punctuation">(</span>server_socket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-delete">delete</span> pool<span class="token punctuation">;</span>
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="how-to-run-3">How to Run: </h4>
+<ol>
+<li>Compile the file using a C++ compiler (e.g., <code>g++</code>):<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>g++ webserver.cpp <span class="token parameter variable">-o</span> webserver <span class="token parameter variable">-lpthread</span>
+</code></pre>(Note: The <code>-lpthread</code> flag is required to link the pthread library.)</li>
+<li>Run the compiled program:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./webserver
+</code></pre></li>
+<li>The server will start listening on port 8080. You can send HTTP requests to <code>http://localhost:8080</code> using a browser or a tool like <code>curl</code>.</li>
+<li>To shut down the server gracefully, press <code>Ctrl+C</code>. The server will handle the shutdown signal and terminate all threads properly.</li>
+</ol>
+<h4 id="output-1">Output: </h4>
+<p><img src="Task2//output1.png" alt=""></p>
+<hr>
+<h2 id="conclusion-1">Conclusion </h2>
+<p>Task 2 focuses on building a multithreaded web server that can handle multiple client requests concurrently. The server uses a thread pool to manage resources efficiently and ensures proper thread synchronization to avoid race conditions. The implementation also supports graceful shutdown, allowing the server to exit cleanly without leaving threads hanging.</p>
+<p>The <code>webserver.cpp</code> file contains the complete implementation of the server, and the instructions for compiling and running the program are provided above. This task demonstrates key concepts in concurrent programming, including thread management, synchronization, and resource pooling.</p>
+<h1 id="task-3-virtual-memory-system-with-paging">Task 3: Virtual Memory System with Paging </h1>
+<h2 id="overview-2">Overview </h2>
+<p>In Task 3, I've implemented a simple virtual memory system with paging. The program simulates a process with virtual memory addresses that are mapped to physical memory using a page table. The system handles page faults and implements the <strong>LRU (Least Recently Used)</strong> page replacement algorithm to bring pages into memory when a page fault occurs. The system also keeps track of which pages are in memory and handles page swaps with minimal overhead.</p>
+<h2 id="key-features-2">Key Features </h2>
+<ol>
+<li><strong>Virtual Memory Simulation</strong>: The program simulates virtual memory addresses and maps them to physical memory using a page table.</li>
+<li><strong>Page Fault Handling</strong>: When a page fault occurs (i.e., the requested page is not in memory), the system loads the required page from disk into memory.</li>
+<li><strong>LRU Page Replacement</strong>: The <strong>Least Recently Used (LRU)</strong> algorithm is used to decide which page to replace when a page fault occurs.</li>
+<li><strong>Page Table Management</strong>: The system maintains a page table to track which pages are in memory and their corresponding frames in physical memory.</li>
+<li><strong>Disk Simulation</strong>: The program simulates reading from and writing to disk when pages are swapped in and out of memory.</li>
+</ol>
+<h2 id="files-and-their-roles-2">Files and Their Roles </h2>
+<h3 id="1-virtual_memorycpp">1. <code>virtual_memory.cpp</code> </h3>
+<p>This file contains the implementation of the virtual memory system. It defines a <code>VirtualMemory</code> class that handles virtual memory operations, including reading, writing, and page fault handling.</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>#include &lt;iostream&gt;
+#include &lt;unordered_map&gt;
+#include &lt;list&gt;
+#include &lt;vector&gt;
+#include &lt;cstdint&gt;
+
+class VirtualMemory {
+private:
+    static const int PAGE_SIZE = 4096;
+    static const int FRAME_COUNT = 128;
+    static const int PAGE_COUNT = 256;
+
+    struct Page {
+        int frame_number = -1;
+        bool present = false;
+        bool dirty = false;
+        std::vector&lt;uint8_t&gt; data;
+
+        Page() : data(PAGE_SIZE, 0) {}
+    };
+
+    std::vector&lt;Page&gt; pages;
+    std::vector&lt;bool&gt; frames;
+    std::list&lt;int&gt; lru_list;
+    std::unordered_map&lt;int, std::list&lt;int&gt;::iterator&gt; page_to_lru;
+
+    int allocateFrame() {
+        if (lru_list.size() &lt; FRAME_COUNT) {
+            for (int i = 0; i &lt; FRAME_COUNT; i++) {
+                if (!frames[i]) {
+                    frames[i] = true;
+                    return i;
+                }
+            }
+        }
+        
+        int victim_page = lru_list.back();
+        lru_list.pop_back();
+        page_to_lru.erase(victim_page);
+        
+        int frame = pages[victim_page].frame_number;
+        if (pages[victim_page].dirty) {
+            writePageToDisk(victim_page);
+        }
+        
+        pages[victim_page].present = false;
+        pages[victim_page].frame_number = -1;
+        return frame;
+    }
+
+    void updateLRU(int page_number) {
+        if (page_to_lru.find(page_number) != page_to_lru.end()) {
+            lru_list.erase(page_to_lru[page_number]);
+        }
+        lru_list.push_front(page_number);
+        page_to_lru[page_number] = lru_list.begin();
+    }
+
+    void handlePageFault(int page_number) {
+        int frame = allocateFrame();
+        loadPageFromDisk(page_number, frame);
+        pages[page_number].frame_number = frame;
+        pages[page_number].present = true;
+        pages[page_number].dirty = false;
+        updateLRU(page_number);
+    }
+
+    void writePageToDisk(int page_number) {
+        std::cout &lt;&lt; "Writing page " &lt;&lt; page_number &lt;&lt; " to disk" &lt;&lt; std::endl;
+    }
+
+    void loadPageFromDisk(int page_number, int frame) {
+        std::cout &lt;&lt; "Loading page " &lt;&lt; page_number &lt;&lt; " into frame " &lt;&lt; frame &lt;&lt; std::endl;
+    }
+
+public:
+    VirtualMemory() : pages(PAGE_COUNT), frames(FRAME_COUNT, false) {}
+
+    uint8_t read(int virtual_address) {
+        int page_number = virtual_address / PAGE_SIZE;
+        int offset = virtual_address % PAGE_SIZE;
+
+        if (!pages[page_number].present) {
+            std::cout &lt;&lt; "Page fault on read: " &lt;&lt; page_number &lt;&lt; std::endl;
+            handlePageFault(page_number);
+        }
+
+        updateLRU(page_number);
+        return pages[page_number].data[offset];
+    }
+
+    void write(int virtual_address, uint8_t value) {
+        int page_number = virtual_address / PAGE_SIZE;
+        int offset = virtual_address % PAGE_SIZE;
+
+        if (!pages[page_number].present) {
+            std::cout &lt;&lt; "Page fault on write: " &lt;&lt; page_number &lt;&lt; std::endl;
+            handlePageFault(page_number);
+        }
+
+        pages[page_number].data[offset] = value;
+        pages[page_number].dirty = true;
+        updateLRU(page_number);
+    }
+};
+
+int main() {
+    VirtualMemory vm;
+    
+    // Test virtual memory operations
+    vm.write(0, 42);
+    vm.write(4096, 100);  // Write to second page
+    vm.write(8192, 200);  // Write to third page
+    
+    std::cout &lt;&lt; "Reading from address 0: " &lt;&lt; (int)vm.read(0) &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Reading from address 4096: " &lt;&lt; (int)vm.read(4096) &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Reading from address 8192: " &lt;&lt; (int)vm.read(8192) &lt;&lt; std::endl;
+
+    return 0;
+}
+```cpp
+
+
+#### How to Run: {#how-to-run-4 }
+1. Compile the file using a C++ compiler (e.g., `g++`):
+   ```bash
+   g++ virtual_memory.cpp -o virtual_memory
+</code></pre><ol start="2">
+<li>Run the compiled program:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./virtual_memory
+</code></pre></li>
+<li>The program will simulate virtual memory operations, including reading and writing to memory, handling page faults, and swapping pages using the LRU algorithm.</li>
+<li>The output will display the results of memory operations, such as loading pages from disk, writing pages to disk, and reading values from memory.</li>
+</ol>
+<h4 id="output-2">Output: </h4>
+<p><img src="Task3//output1.png" alt=""></p>
+<hr>
+<h2 id="conclusion-2">Conclusion </h2>
+<p>Task 3 focuses on implementing a virtual memory system with paging. The system simulates virtual memory addresses, handles page faults, and uses the LRU algorithm for page replacement. The program demonstrates key concepts in memory management, including:</p>
+<ul>
+<li><strong>Virtual Memory</strong>: Simulating virtual addresses and mapping them to physical memory.</li>
+<li><strong>Page Fault Handling</strong>: Loading pages from disk when they are not in memory.</li>
+<li><strong>LRU Algorithm</strong>: Replacing the least recently used page when memory is full.</li>
+</ul>
+<p>The <code>virtual_memory.cpp</code> file contains the complete implementation of the virtual memory system, and the instructions for compiling and running the program are provided above. This task provides a hands-on understanding of how operating systems manage memory and handle page faults efficiently.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
